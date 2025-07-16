@@ -1,0 +1,3041 @@
+WEBVTT
+
+00:00:07.330 --> 00:00:10.680
+OK hello everyone good morning good afternoon and good evening wherever you
+
+00:00:10.680 --> 00:00:13.800
+are thank you so much for joining us today in this session
+
+00:00:13.800 --> 00:00:16.850
+on introduction to mantra autopilot now we do
+
+00:00:16.850 --> 00:00:20.000
+have an interesting session lined up for today but before we go ahead and start
+
+00:00:20.000 --> 00:00:23.130
+there are a few housekeeping roles that I would want to share with you
+
+00:00:23.130 --> 00:00:26.200
+this session is being recorded and during the session
+
+00:00:26.200 --> 00:00:29.770
+you are more than welcome to post your questions in the Q&amp;A tab they will
+
+00:00:29.770 --> 00:00:33.080
+be taken up either during or towards the end of the session depending on the time
+
+00:00:33.080 --> 00:00:33.090
+on the time.
+
+00:00:33.840 --> 00:00:36.960
+And any unanswered questions will be answered offline and made available on
+
+00:00:36.960 --> 00:00:37.560
+the SharePoint.
+
+00:00:38.370 --> 00:00:41.690
+It was the end of the session of course I will share the thread link in the
+
+00:00:41.690 --> 00:00:44.920
+Q&amp;A window so please do not forget to claim your credits
+
+00:00:44.920 --> 00:00:48.170
+for this session the link will be in the feature tab of your Q and
+
+00:00:48.170 --> 00:00:48.770
+A panels.
+
+00:00:50.360 --> 00:00:53.480
+And that's all from my end so with that I
+
+00:00:53.480 --> 00:00:56.520
+would like to hand over the session to our presenters
+
+00:00:56.520 --> 00:00:59.880
+for today vikas pratap Singh so vikas over to you now
+
+00:01:01.440 --> 00:01:04.480
+Thank you, Sakshi and yeah.
+
+00:01:06.000 --> 00:01:08.520
+Hello, ladies and gentlemen. Welcome to the session.
+
+00:01:10.360 --> 00:01:13.720
+Of Nokia mentoray autopilot my name is
+
+00:01:13.720 --> 00:01:16.760
+vikas I'm the product manager who is current
+
+00:01:16.760 --> 00:01:19.840
+currently working in the manta
+
+00:01:24.520 --> 00:01:26.600
+Fine product that is meant that a autopilot.
+
+00:01:31.260 --> 00:01:34.460
+During this the course of this presentation uh what
+
+00:01:34.460 --> 00:01:38.000
+we will do is we will look into the uh the
+
+00:01:38.000 --> 00:01:41.180
+details of uh what autopilot is first
+
+00:01:41.180 --> 00:01:42.940
+first, we'll look into the background. What?
+
+00:01:44.880 --> 00:01:47.920
+What were the reasons behind which drove
+
+00:01:47.920 --> 00:01:51.760
+the creation of this product autopilot will then
+
+00:01:51.760 --> 00:01:55.280
+look into how it works what value it brings
+
+00:01:55.280 --> 00:01:56.760
+brings, and so on.
+
+00:01:58.760 --> 00:02:01.760
+Then we'll look at some customer use cases.
+
+00:02:03.310 --> 00:02:06.950
+Umm the results that we have achieved uh from our differe
+
+00:02:06.950 --> 00:02:09.990
+different customers uh we'll then move on to a bit of umm
+
+00:02:09.990 --> 00:02:13.150
+umm the the vision that we
+
+00:02:13.150 --> 00:02:16.670
+have for autopilot and where we want to head
+
+00:02:18.240 --> 00:02:20.960
+So this will be the agenda of this discussion.
+
+00:02:23.550 --> 00:02:26.790
+On the panel I have Mohan with me you know
+
+00:02:26.790 --> 00:02:29.950
+Mohan is one of the senior architects and ment
+
+00:02:29.950 --> 00:02:33.190
+mentor is on team he
+
+00:02:33.190 --> 00:02:36.550
+is one of the key brains behind autopilot
+
+00:02:36.550 --> 00:02:39.670
+as a product so yeah
+
+00:02:39.670 --> 00:02:43.190
+Mohan will be helping
+
+00:02:43.190 --> 00:02:46.310
+me answer a lot of difficult questions that
+
+00:02:46.310 --> 00:02:49.350
+may be coming from you and because they are difficult they go to Mohan
+
+00:02:51.700 --> 00:02:54.980
+Umm along with Mohan I have raya and Priya also
+
+00:02:54.980 --> 00:02:58.120
+in this call with me from the product portfolio management
+
+00:02:58.120 --> 00:03:01.240
+team umm I'm sure they don't need any
+
+00:03:01.240 --> 00:03:04.520
+interaction umm they will help us out
+
+00:03:07.480 --> 00:03:09.640
+Any brand related questions or anything like that?
+
+00:03:11.850 --> 00:03:15.130
+OK so before I get into the discussion probably I'll
+
+00:03:15.130 --> 00:03:18.250
+switch off the video just to make sure that the
+
+00:03:18.250 --> 00:03:21.280
+bandwidth is not hogged by my face
+
+00:03:21.280 --> 00:03:24.690
+and we focus mostly on the discussion
+
+00:03:24.690 --> 00:03:28.240
+itself on the material that is being shared so
+
+00:03:28.240 --> 00:03:29.290
+So that we start that.
+
+00:03:33.320 --> 00:03:34.520
+OK so.
+
+00:03:36.650 --> 00:03:40.330
+What is autopilot autop
+
+00:03:40.330 --> 00:03:43.650
+autopilot is a cloud native AI driven network
+
+00:03:43.650 --> 00:03:46.960
+optimization solution as you know network opt
+
+00:03:46.960 --> 00:03:47.730
+optimization is one of the.
+
+00:03:49.240 --> 00:03:52.360
+Most challenging aspects that our customers face
+
+00:03:52.360 --> 00:03:56.520
+and doing it manually is is is
+
+00:03:56.520 --> 00:04:00.000
+a daunting task it's not something that is really
+
+00:04:00.000 --> 00:04:03.200
+advisable to do so that
+
+00:04:03.200 --> 00:04:05.880
+that is where the mentary autopilot comes into picture.
+
+00:04:06.940 --> 00:04:10.140
+As he said it's a cloud native AI driven network optimization
+
+00:04:10.140 --> 00:04:13.320
+solution it leverages both on
+
+00:04:13.320 --> 00:04:16.680
+supervised and unsupervised learning to to
+
+00:04:16.680 --> 00:04:20.720
+contextualise the whole network and provide very
+
+00:04:20.720 --> 00:04:22.020
+very precise optimization.
+
+00:04:23.640 --> 00:04:26.760
+What it does is it proactively analyses the network
+
+00:04:26.760 --> 00:04:30.280
+performance it generates data driven
+
+00:04:30.280 --> 00:04:33.800
+recommendations with fine tuned parameters which is very which are
+
+00:04:33.800 --> 00:04:34.880
+are very precise in nature.
+
+00:04:36.080 --> 00:04:39.760
+Uh it assesses the network objectives and then presents
+
+00:04:39.760 --> 00:04:43.560
+those insights in a very user friendly uh
+
+00:04:43.560 --> 00:04:46.960
+interface and that is what our autopilot
+
+00:04:46.960 --> 00:04:50.200
+as a product is in just will
+
+00:04:50.200 --> 00:04:53.280
+of course be getting into the details of this product in the
+
+00:04:56.070 --> 00:05:00.230
+Now before we go into the details of the
+
+00:05:00.230 --> 00:05:04.270
+autopilot let's first understand the background that
+
+00:05:04.270 --> 00:05:07.430
+or the underlying reasons which led to this decision
+
+00:05:07.430 --> 00:05:10.510
+of creating autopilot as an
+
+00:05:10.510 --> 00:05:11.910
+as an individual independent product.
+
+00:05:13.480 --> 00:05:16.560
+Those who have been working with manta
+
+00:05:16.560 --> 00:05:19.680
+rayson would already know that this
+
+00:05:19.680 --> 00:05:22.040
+offering was called Cognitive Son earlier.
+
+00:05:24.200 --> 00:05:27.840
+And there was a conscious decision taken that
+
+00:05:27.840 --> 00:05:31.320
+autopilot should be an independent
+
+00:05:31.320 --> 00:05:34.720
+product and not just a value pack within
+
+00:05:34.720 --> 00:05:35.080
+the.
+
+00:05:36.760 --> 00:05:40.080
+What were the reasons that drove us to this discussion
+
+00:05:41.920 --> 00:05:42.080
+Well.
+
+00:05:43.460 --> 00:05:46.960
+The first reason is that we wanted to have independent
+
+00:05:46.960 --> 00:05:50.420
+contract negotiations uh which are free from any
+
+00:05:50.420 --> 00:05:53.520
+baggage of the existing zone contracts that we have had
+
+00:05:53.520 --> 00:05:56.960
+and and the nature those contracts have been
+
+00:05:56.960 --> 00:05:57.340
+been built upon.
+
+00:05:59.150 --> 00:06:02.190
+The next very important aspect was
+
+00:06:02.190 --> 00:06:05.230
+in general the product revi vital
+
+00:06:05.230 --> 00:06:09.750
+vitalization now here is a product and which
+
+00:06:09.750 --> 00:06:13.310
+is plantaray autopilot which truly reflect
+
+00:06:13.310 --> 00:06:16.910
+reflects our commitment towards bringing a solution
+
+00:06:18.560 --> 00:06:22.000
+Into the AI for ran portfolio right
+
+00:06:22.000 --> 00:06:25.840
+we want to address that Dom
+
+00:06:25.840 --> 00:06:29.040
+domain that is where autopilot comes into picture
+
+00:06:29.040 --> 00:06:29.080
+picture.
+
+00:06:29.750 --> 00:06:32.830
+It brings in a level 4 autonomous
+
+00:06:32.830 --> 00:06:36.630
+operations uh into the fold uh which
+
+00:06:36.630 --> 00:06:39.910
+we wanted to have demarcated vis
+
+00:06:39.910 --> 00:06:43.190
+visibility from the Level 3
+
+00:06:43.190 --> 00:06:47.110
+automation that comes from the mantra song that
+
+00:06:47.110 --> 00:06:50.710
+is the reason we wanted autopilot to have its own identity
+
+00:06:50.710 --> 00:06:53.870
+which clearly defines that OK this is a AI
+
+00:06:53.870 --> 00:06:54.550
+is a AI driven product.
+
+00:06:55.320 --> 00:06:55.640
+Which brings in.
+
+00:06:57.440 --> 00:07:01.440
+Another level of automation on top of the
+
+00:07:01.440 --> 00:07:02.480
+existing mentary saw.
+
+00:07:04.640 --> 00:07:07.760
+Also umm as of today
+
+00:07:07.760 --> 00:07:10.840
+umm what autopilot is doing is it's
+
+00:07:10.840 --> 00:07:14.760
+orchestrating this on modules of course but we
+
+00:07:14.760 --> 00:07:17.920
+do not want that to be restrict
+
+00:07:17.920 --> 00:07:21.400
+restricted only to this much scope we
+
+00:07:21.400 --> 00:07:24.520
+want that scope to enhance we don't want
+
+00:07:24.520 --> 00:07:27.960
+that scope to increase and eventually we want autopilot
+
+00:07:27.960 --> 00:07:31.240
+to evolve into orchestrating even custom
+
+00:07:31.240 --> 00:07:34.960
+objectives and custom modules and custom objectives are customers
+
+00:07:35.790 --> 00:07:39.390
+Example have uh hundreds of uh
+
+00:07:39.390 --> 00:07:42.710
+adapted modules of their own we want autopilot to be
+
+00:07:42.710 --> 00:07:46.190
+able to orchestrate those modules as well not
+
+00:07:46.190 --> 00:07:49.910
+just the standard song modules and
+
+00:07:49.910 --> 00:07:52.950
+in future when we get into the smo business
+
+00:07:52.950 --> 00:07:56.070
+we want this autopilot
+
+00:07:56.070 --> 00:07:59.870
+to be able to orchestrate our apps custom our apps and 3rd
+
+00:07:59.870 --> 00:08:00.630
+and 3rd party our apps as well.
+
+00:08:01.440 --> 00:08:02.640
+So these were the reasons.
+
+00:08:04.400 --> 00:08:04.960
+Behind.
+
+00:08:06.600 --> 00:08:09.640
+The decision of announcing autopilot as an individ
+
+00:08:09.640 --> 00:08:10.680
+individual independent product.
+
+00:08:14.340 --> 00:08:17.820
+During this course of presentation we'll talk about level
+
+00:08:17.820 --> 00:08:20.920
+4 automation quite often so here I just want to
+
+00:08:20.920 --> 00:08:23.960
+explain what are different levels what
+
+00:08:23.960 --> 00:08:27.200
+is this level 4 so we have this forum
+
+00:08:27.200 --> 00:08:30.400
+called Tele management forum as you would already know which defines various
+
+00:08:30.400 --> 00:08:32.380
+various levels of autonomous operations.
+
+00:08:33.920 --> 00:08:35.440
+Now to be at level 4.
+
+00:08:37.200 --> 00:08:40.240
+The solution or the the product needs to be able to
+
+00:08:40.240 --> 00:08:41.640
+make intent based.
+
+00:08:42.260 --> 00:08:45.560
+Decisions autonomously Nokia
+
+00:08:45.560 --> 00:08:48.840
+already has that offering which is autopilot
+
+00:08:48.840 --> 00:08:52.560
+and it caters to uh umm various
+
+00:08:52.560 --> 00:08:55.680
+used cases key used cases uh
+
+00:08:55.680 --> 00:08:58.960
+with level 4 autonomous operation right and
+
+00:08:58.960 --> 00:08:59.420
+right? And that is why.
+
+00:09:01.440 --> 00:09:05.960
+It's important that we segregate it from the typical
+
+00:09:05.960 --> 00:09:08.640
+automated solution that we have had so far.
+
+00:09:13.110 --> 00:09:16.510
+So let's look at the evolution journey of autopilot
+
+00:09:18.440 --> 00:09:21.560
+And it starts with the need to autom
+
+00:09:21.560 --> 00:09:24.760
+automate the whole network optimization itself if
+
+00:09:24.760 --> 00:09:27.880
+we we do not have any kind of automation and the operator
+
+00:09:27.880 --> 00:09:29.200
+operator has to handle it manually.
+
+00:09:30.840 --> 00:09:34.240
+It's a daunting task you have to manually monitor the
+
+00:09:34.240 --> 00:09:37.480
+KPIs you have to do analysis identify where
+
+00:09:37.480 --> 00:09:41.280
+the network performance degradations are happening then
+
+00:09:41.280 --> 00:09:44.840
+you have to manually map the solutions using some scripts or
+
+00:09:44.840 --> 00:09:48.000
+you have to create the correction forms manual plans
+
+00:09:48.000 --> 00:09:51.800
+manually to fix the problem and once those solutions
+
+00:09:51.800 --> 00:09:52.520
+solutions are applied.
+
+00:09:54.200 --> 00:09:57.320
+Then verify the results manually and if the need be rolled it back
+
+00:09:57.320 --> 00:09:59.640
+and this may take weeks, maybe months.
+
+00:10:01.310 --> 00:10:04.590
+Then came uh our classic song
+
+00:10:04.590 --> 00:10:08.030
+the Mandarin song which provides a human
+
+00:10:08.030 --> 00:10:09.790
+human led automated solution.
+
+00:10:11.080 --> 00:10:14.320
+It comes with automated report generation for any
+
+00:10:14.320 --> 00:10:15.400
+kind of problem analysis.
+
+00:10:17.000 --> 00:10:20.400
+Umm the solution mapping uh it comes in the
+
+00:10:20.400 --> 00:10:24.280
+form of various on used cases on modules uh but
+
+00:10:24.280 --> 00:10:27.400
+then which some module has to be applied where that is
+
+00:10:27.400 --> 00:10:30.680
+that is decided by the operator manually
+
+00:10:30.680 --> 00:10:33.880
+basically it's a experience based Sol
+
+00:10:35.840 --> 00:10:39.880
+And once the solution has been deployed we talk about that that that
+
+00:10:39.880 --> 00:10:43.120
+is when the verification the rollback part comes into picture where
+
+00:10:43.120 --> 00:10:46.560
+manually one has to verify the outcome and
+
+00:10:46.560 --> 00:10:49.800
+if there is a need trigger the
+
+00:10:49.800 --> 00:10:53.360
+automated rollback but at least trigger it initiate it
+
+00:10:55.080 --> 00:10:56.600
+Manually after the analysis of.
+
+00:10:58.240 --> 00:10:59.880
+The results of our solution orchestration.
+
+00:11:02.010 --> 00:11:05.040
+Autopilot brings in the next level of automation
+
+00:11:05.040 --> 00:11:05.050
+
+
+00:11:06.470 --> 00:11:08.790
+The entire analysis of the network.
+
+00:11:11.120 --> 00:11:14.440
+The the objectives of the network and the
+
+00:11:14.440 --> 00:11:18.200
+thresholds the performance KPIs everything is auton
+
+00:11:18.200 --> 00:11:21.360
+autonomously analysed by the autopilot without
+
+00:11:21.360 --> 00:11:22.120
+without any manual intervention.
+
+00:11:23.880 --> 00:11:27.000
+The solutions are pre mapped as of now so you have
+
+00:11:27.000 --> 00:11:30.120
+these on modules which are mapped
+
+00:11:30.120 --> 00:11:33.360
+to the objectives that we have and what those objectives
+
+00:11:33.360 --> 00:11:35.600
+objectives are. We'll look into them in the coming slides.
+
+00:11:37.280 --> 00:11:40.400
+They are already mapped and they are deployed only on the
+
+00:11:40.400 --> 00:11:43.600
+problematic cells not in the entire network only on the
+
+00:11:43.600 --> 00:11:46.720
+problematic sense with precise
+
+00:11:46.720 --> 00:11:47.200
+precise calibration.
+
+00:11:49.160 --> 00:11:52.640
+Even the verification of the result
+
+00:11:52.640 --> 00:11:55.960
+is autonomous where it can be auto verified and
+
+00:11:55.960 --> 00:11:58.520
+and needed adjustments can be done automatically.
+
+00:12:00.490 --> 00:12:02.610
+So this is the evolution journey of autopilot.
+
+00:12:04.070 --> 00:12:08.230
+And with that you see the human intervention has reduced now
+
+00:12:08.230 --> 00:12:11.550
+how exactly it works uh we will look into this
+
+00:12:11.550 --> 00:12:16.110
+and this particular slide now if
+
+00:12:16.110 --> 00:12:19.190
+you look at any network optim
+
+00:12:19.190 --> 00:12:21.190
+optimization operation, these are various phases.
+
+00:12:22.760 --> 00:12:26.200
+First one is you have
+
+00:12:26.200 --> 00:12:30.280
+to identify what is the object objective towards which we are
+
+00:12:30.280 --> 00:12:33.480
+running any network optimization operation or
+
+00:12:33.480 --> 00:12:33.880
+project.
+
+00:12:35.490 --> 00:12:38.610
+Understand the current state understand what
+
+00:12:38.610 --> 00:12:41.880
+solution needs to be deployed and then analyse whether the
+
+00:12:45.460 --> 00:12:48.660
+At the top we'll see how it is managed
+
+00:12:48.660 --> 00:12:51.960
+in using the classic song so when
+
+00:12:51.960 --> 00:12:56.000
+we are talking about classic song we do not have a
+
+00:12:56.000 --> 00:12:59.240
+very well defined or rather these
+
+00:12:59.240 --> 00:13:02.440
+objectives are not defined in a very
+
+00:13:02.440 --> 00:13:05.960
+crisp boundaries they are very fluidic in nature they are
+
+00:13:05.960 --> 00:13:09.240
+driven by various KPIs they are handled
+
+00:13:09.240 --> 00:13:09.580
+handled by.
+
+00:13:10.600 --> 00:13:14.000
+They're driven by the problem statements and trigger points that
+
+00:13:14.000 --> 00:13:17.080
+may arise from the various user
+
+00:13:17.080 --> 00:13:20.960
+interfaces that the operator has
+
+00:13:20.960 --> 00:13:21.480
+access to.
+
+00:13:22.900 --> 00:13:25.920
+Now to understand that the operator
+
+00:13:25.920 --> 00:13:29.400
+has to go through numerous data sets they have
+
+00:13:29.400 --> 00:13:33.060
+the operate the network engineers working towards the
+
+00:13:33.060 --> 00:13:35.180
+the overall network optimization.
+
+00:13:36.840 --> 00:13:40.280
+They have to be an expert in ram they
+
+00:13:40.280 --> 00:13:43.760
+have this is entirely experience driven operation and
+
+00:13:43.760 --> 00:13:46.960
+now after analysing these numerous data set
+
+00:13:46.960 --> 00:13:50.520
+sets the trigger points that is when the operator
+
+00:13:50.520 --> 00:13:54.040
+or the network engineer decides OK now
+
+00:13:54.040 --> 00:13:57.240
+we have to bring in these
+
+00:13:57.240 --> 00:14:00.440
+on used cases into picture the son use cases the son
+
+00:14:01.960 --> 00:14:05.000
+Will run in closed loop they will they
+
+00:14:05.000 --> 00:14:06.720
+They will automate the whole operation.
+
+00:14:08.480 --> 00:14:12.240
+The optimization operation itself but which module
+
+00:14:12.240 --> 00:14:15.400
+to use and with what parameters
+
+00:14:15.400 --> 00:14:18.920
+what settings is something that is handled by the network engine
+
+00:14:18.920 --> 00:14:21.840
+engineer. So not only does the network engineer need to be.
+
+00:14:23.540 --> 00:14:26.600
+An expert in the ran they have to be
+
+00:14:26.600 --> 00:14:29.660
+an expert in so on also they have to have a very
+
+00:14:29.660 --> 00:14:33.480
+good understanding on how sewn works once
+
+00:14:33.480 --> 00:14:36.780
+the solution is deployed then the outcome
+
+00:14:36.780 --> 00:14:38.140
+outcome is analysed.
+
+00:14:40.800 --> 00:14:44.080
+And and if it is fine good enough if not
+
+00:14:44.080 --> 00:14:45.200
+not then.
+
+00:14:46.920 --> 00:14:48.600
+Rollback operations need to be performed.
+
+00:14:51.690 --> 00:14:54.410
+Now any song customer that we have.
+
+00:14:56.560 --> 00:14:59.640
+Will find if at all there are challenges found
+
+00:14:59.640 --> 00:15:03.640
+they will find challenges in these two phases analy
+
+00:15:03.640 --> 00:15:07.080
+analysing the overall network data coming
+
+00:15:07.080 --> 00:15:10.280
+up with the problem statement and then triggering the
+
+00:15:10.280 --> 00:15:11.280
+the right sound solutions.
+
+00:15:13.590 --> 00:15:16.870
+This is where autopilot comes into picture now
+
+00:15:16.870 --> 00:15:20.270
+in case of auto autopilot first of all the
+
+00:15:20.270 --> 00:15:23.670
+objectives are clearly have clearly defined boundaries we have these
+
+00:15:23.670 --> 00:15:26.750
+three shipped objectives retainability
+
+00:15:26.750 --> 00:15:30.070
+mobility accessibility availability and throughput
+
+00:15:30.070 --> 00:15:33.150
+now these are the objectives that the oper
+
+00:15:33.150 --> 00:15:36.390
+operator will work for and this is the input from the operator for example the
+
+00:15:36.390 --> 00:15:38.670
+example, the operator can say I want to improve my mobility.
+
+00:15:40.480 --> 00:15:43.560
+The moment your network is integrated into autopil
+
+00:15:43.560 --> 00:15:46.800
+autopilot the first thing that it does is it understands the layout of
+
+00:15:46.800 --> 00:15:49.840
+the land it understands the whole network and
+
+00:15:49.840 --> 00:15:51.440
+and creates a context.
+
+00:15:53.000 --> 00:15:54.840
+On top of which it will build its solution.
+
+00:15:56.330 --> 00:15:59.360
+Once that context is created then
+
+00:15:59.360 --> 00:16:02.570
+it labels the the
+
+00:16:02.570 --> 00:16:06.250
+all the all the cells on various charac
+
+00:16:06.250 --> 00:16:06.730
+characteristics.
+
+00:16:11.680 --> 00:16:14.960
+Based on this labelling then it'll decide
+
+00:16:14.960 --> 00:16:18.280
+which ones are the cells which are
+
+00:16:18.280 --> 00:16:21.760
+positing which are which are contributing positively to
+
+00:16:21.760 --> 00:16:24.960
+any of these objectives and which are contributing
+
+00:16:27.120 --> 00:16:31.280
+And with that it will identify the problem
+
+00:16:34.760 --> 00:16:38.160
+And then comes the solution so problem and
+
+00:16:38.160 --> 00:16:42.280
+as as you can see the whole analysis is autonomous problem
+
+00:16:42.280 --> 00:16:46.080
+identification is autonomous and now comes the solution
+
+00:16:46.080 --> 00:16:49.400
+orchestration that itself is autonomous so
+
+00:16:49.400 --> 00:16:52.920
+we have free ship modules which are already
+
+00:16:52.920 --> 00:16:54.880
+already mapped to these objectives.
+
+00:16:56.640 --> 00:16:59.760
+The autopilot will calibrate the right settings for those objectives and
+
+00:16:59.760 --> 00:17:03.200
+then deploy those objectives based on the context
+
+00:17:03.200 --> 00:17:06.320
+that it has created in the previous steps once
+
+00:17:06.320 --> 00:17:09.080
+Once deployed, the whole result is auto verified.
+
+00:17:09.660 --> 00:17:12.680
+And then if there is a need
+
+00:17:12.680 --> 00:17:14.940
+of course, needed rollbacks are found.
+
+00:17:17.160 --> 00:17:20.440
+So this is how autopilot brings value
+
+00:17:25.100 --> 00:17:28.860
+How does it do that architecturally what does it look like uh
+
+00:17:28.860 --> 00:17:32.280
+here I'm trying to explain to you uh in two different sections
+
+00:17:32.280 --> 00:17:35.400
+on the left hand side you see uh augmented is on
+
+00:17:35.400 --> 00:17:39.520
+solution itself which brings in the Level 3 automation and the
+
+00:17:39.520 --> 00:17:42.740
+network optimization but here there are a lot
+
+00:17:42.740 --> 00:17:45.960
+of inputs needed from the user the topology capacity
+
+00:17:45.960 --> 00:17:49.100
+coverage frequency and so on with all these
+
+00:17:49.100 --> 00:17:52.160
+inputs fed into the mentor S on mentor S on then
+
+00:17:52.160 --> 00:17:52.180
+mentor S on then.
+
+00:17:52.920 --> 00:17:56.360
+Performs optimization and planning of the network and
+
+00:17:56.360 --> 00:17:59.080
+it may takes hours or days also.
+
+00:18:02.510 --> 00:18:05.790
+Now on top of that what we have done is we have
+
+00:18:05.790 --> 00:18:06.510
+have brought in.
+
+00:18:08.120 --> 00:18:12.080
+This AI enabled product called autopilot in terms
+
+00:18:12.080 --> 00:18:15.200
+of input it does not need much from the user just the
+
+00:18:15.200 --> 00:18:18.520
+objectives that the user aims to improve which
+
+00:18:18.520 --> 00:18:21.920
+can be throughput availability through mobility
+
+00:18:21.920 --> 00:18:23.600
+mobility, accessibility and returnability.
+
+00:18:25.400 --> 00:18:28.680
+Once that is fed OK which objective does
+
+00:18:28.680 --> 00:18:32.200
+autopilot need to focus on which all object
+
+00:18:32.200 --> 00:18:33.240
+objective does it need to focus on?
+
+00:18:34.040 --> 00:18:35.760
+It uses the.
+
+00:18:37.320 --> 00:18:40.760
+Very badly tested mentally is on mod
+
+00:18:40.760 --> 00:18:43.800
+modules uh through the NBA
+
+00:18:43.800 --> 00:18:46.880
+that it provides uh it uses those mod
+
+00:18:46.880 --> 00:18:50.200
+modules to then deploy a solution in a very pre
+
+00:18:50.200 --> 00:18:53.400
+precise format so here it leverages on
+
+00:18:53.400 --> 00:18:56.920
+this battle tested platform but
+
+00:18:56.920 --> 00:19:00.080
+the whole analysis is handled auton
+
+00:19:00.080 --> 00:19:03.440
+autonomously by the autopilot and that is where it brings in
+
+00:19:03.440 --> 00:19:05.240
+in a level 4 automation.
+
+00:19:06.040 --> 00:19:06.920
+Or autonomous execution.
+
+00:19:09.440 --> 00:19:13.320
+Obviously it is much faster umm uh as
+
+00:19:13.320 --> 00:19:16.920
+compared to where it may take days in case
+
+00:19:16.920 --> 00:19:18.240
+case of autopilot, it may take minutes.
+
+00:19:23.160 --> 00:19:26.440
+On the coming slides I will talk about
+
+00:19:27.960 --> 00:19:28.040
+The.
+
+00:19:31.360 --> 00:19:35.920
+The intrinsic algorithm that that autopil
+
+00:19:35.920 --> 00:19:36.560
+Autopilot uses, the.
+
+00:19:38.840 --> 00:19:41.960
+The fundamental framework that it acts upon in order to achieve
+
+00:19:41.960 --> 00:19:42.480
+its objective.
+
+00:19:44.970 --> 00:19:48.000
+The first thing that we need to understand is the foundation
+
+00:19:48.000 --> 00:19:50.890
+on which this entire algorithm is built.
+
+00:19:53.010 --> 00:19:56.240
+If you take any aiml solution any
+
+00:19:56.240 --> 00:19:57.010
+any AI product.
+
+00:19:58.720 --> 00:20:01.840
+The most fundamental aspect of it
+
+00:20:04.160 --> 00:20:07.520
+Fundamental thing that it needs to achieve is
+
+00:20:09.320 --> 00:20:13.240
+To understand the layout of the land that it has to act upon take
+
+00:20:13.240 --> 00:20:16.560
+for example the automated cars if you if
+
+00:20:16.560 --> 00:20:20.440
+a level of adas or automation it
+
+00:20:20.440 --> 00:20:23.640
+needs to achieve on the road it has to understand exactly
+
+00:20:23.640 --> 00:20:25.520
+exactly where it is, what kind of traffic.
+
+00:20:29.960 --> 00:20:33.040
+What kind of speed zone it is in what is its geograph
+
+00:20:33.040 --> 00:20:33.480
+geographical location?
+
+00:20:34.140 --> 00:20:37.160
+What kind of neighbourhood it is in and so on so forth
+
+00:20:37.160 --> 00:20:40.280
+right that is exactly what aut
+
+00:20:40.280 --> 00:20:43.400
+autopilot also does the moment you integrate your network
+
+00:20:43.400 --> 00:20:46.640
+to autopilot it understands the layout of the
+
+00:20:46.640 --> 00:20:49.860
+land it understands the context it creates a context of
+
+00:20:49.860 --> 00:20:52.580
+context of the whole network, and how does it do so?
+
+00:20:54.120 --> 00:20:57.520
+It uses both static and dynamic
+
+00:20:57.520 --> 00:21:00.720
+characteristics of all the cells in that
+
+00:21:00.720 --> 00:21:04.440
+network in terms of static labelling we take
+
+00:21:04.440 --> 00:21:07.800
+into account 23 labels which can be location based
+
+00:21:07.800 --> 00:21:07.880
+based.
+
+00:21:09.410 --> 00:21:12.450
+Uh DN server type uh various ident
+
+00:21:15.580 --> 00:21:18.840
+Then we have dynamic characteristics such as location deploy
+
+00:21:18.840 --> 00:21:22.120
+deployment and what kind of deployment area it is it is an urban location
+
+00:21:22.120 --> 00:21:24.740
+location, it is a suburban location or a rural area.
+
+00:21:26.320 --> 00:21:29.440
+What kind of density is it in is it
+
+00:21:29.440 --> 00:21:32.960
+in an ultra dense location such
+
+00:21:32.960 --> 00:21:36.160
+as maybe central business district of Bangalore
+
+00:21:38.790 --> 00:21:42.110
+Or in a relatively less dense location or
+
+00:21:42.110 --> 00:21:44.070
+or some sparse location.
+
+00:21:46.900 --> 00:21:50.060
+And then we have a lot of kpi based or SLI based
+
+00:21:50.060 --> 00:21:53.280
+labels such as what kind of mobility we have for the
+
+00:21:53.280 --> 00:21:56.520
+cell which again dynamic in nature the kind of traffic volume
+
+00:21:56.520 --> 00:21:59.580
+what kind of coverage we have whether the uplink and DL traffic is
+
+00:21:59.580 --> 00:22:02.600
+good or bad the load share the wise
+
+00:22:02.600 --> 00:22:03.380
+the wise share and so on and so forth.
+
+00:22:05.160 --> 00:22:08.320
+Using all of this information it creates
+
+00:22:08.320 --> 00:22:11.600
+a context it performs uh contextualization
+
+00:22:11.600 --> 00:22:15.120
+and creates network segments what
+
+00:22:15.120 --> 00:22:18.360
+are these segments now segmentation of
+
+00:22:18.360 --> 00:22:21.640
+the network is done based on these characteristics
+
+00:22:21.640 --> 00:22:24.920
+and some subclusters are created based on the common
+
+00:22:24.920 --> 00:22:28.120
+characteristics so for example it'll have a bunch of cells which
+
+00:22:28.120 --> 00:22:29.320
+which are urban ultra dense.
+
+00:22:30.240 --> 00:22:33.320
+It'll have a bunch of cells which are rude and sparse so
+
+00:22:33.320 --> 00:22:36.400
+on so forth and this is just one example that I
+
+00:22:36.400 --> 00:22:39.440
+m thinking but as I said that we apply
+
+00:22:39.440 --> 00:22:40.720
+apply machine learning capabilities.
+
+00:22:42.290 --> 00:22:45.610
+Uh to understand and uh analyse
+
+00:22:45.610 --> 00:22:48.720
+the static and dynamic characteristics and create these segments
+
+00:22:50.780 --> 00:22:54.220
+And what it does is that it provides a very
+
+00:22:54.220 --> 00:22:57.520
+good a tremendous context using which the
+
+00:22:57.520 --> 00:23:00.780
+autopilot understands the the the the
+
+00:23:00.780 --> 00:23:03.900
+problems of the cell and then goes
+
+00:23:03.900 --> 00:23:07.120
+on to tailor a solution for
+
+00:23:07.120 --> 00:23:10.640
+those problematic cells and not the entire network
+
+00:23:14.030 --> 00:23:17.230
+OK let me have a sip of water because apparently
+
+00:23:17.230 --> 00:23:21.630
+there's too much information coming out of my mouth so
+
+00:23:21.630 --> 00:23:22.390
+So give me a second please.
+
+00:23:28.150 --> 00:23:28.310
+Yeah.
+
+00:23:30.560 --> 00:23:33.920
+So now that we have created the context let's look at
+
+00:23:33.920 --> 00:23:37.440
+the entire workflow which the autopilot uses in order
+
+00:23:37.440 --> 00:23:40.680
+to deploy a solution so the first step
+
+00:23:40.680 --> 00:23:44.440
+we have already discussed a context is created the
+
+00:23:44.440 --> 00:23:48.600
+entire network can be contextualised within minutes not
+
+00:23:48.600 --> 00:23:51.880
+this but just minutes one used case that
+
+00:23:51.880 --> 00:23:55.280
+we saw was almost 186 cases were
+
+00:23:55.280 --> 00:23:55.400
+cases were context sliced.
+
+00:23:56.400 --> 00:23:56.960
+Within.
+
+00:23:58.880 --> 00:23:59.960
+Within 30 minutes.
+
+00:24:01.070 --> 00:24:01.390
+Right.
+
+00:24:03.280 --> 00:24:06.440
+Once this labelling is done static and
+
+00:24:06.440 --> 00:24:09.920
+dynamic both in nature then context
+
+00:24:09.920 --> 00:24:13.120
+groupings are created subclusters are created
+
+00:24:16.120 --> 00:24:19.480
+Identify precise problems and
+
+00:24:19.480 --> 00:24:20.840
+deploy precise solutions.
+
+00:24:23.090 --> 00:24:24.850
+Once these sub clusters are created.
+
+00:24:26.400 --> 00:24:29.440
+Now let's take an example of one particular objective let's say
+
+00:24:29.440 --> 00:24:32.520
+mobility now operator wants OK my mobility I
+
+00:24:32.520 --> 00:24:36.560
+have to ensure that I have high mobility in all these CL
+
+00:24:36.560 --> 00:24:36.880
+these clusters.
+
+00:24:38.560 --> 00:24:41.680
+Now the parameters defining
+
+00:24:44.020 --> 00:24:47.180
+A high performing cell may differ from
+
+00:24:47.180 --> 00:24:50.300
+an urban ultra dense location from a
+
+00:24:50.300 --> 00:24:54.240
+rural ultra rural sparse location so
+
+00:24:54.240 --> 00:24:57.380
+even the thresholds that define whether a cell
+
+00:24:57.380 --> 00:25:00.560
+is contributing positively to this objective or neg
+
+00:25:00.560 --> 00:25:04.040
+negatively to this objective is depending
+
+00:25:04.040 --> 00:25:06.020
+depending dependent on the context.
+
+00:25:07.560 --> 00:25:11.000
+Let's say for an urban ultra dense location we have
+
+00:25:11.000 --> 00:25:11.640
+the subcluster.
+
+00:25:13.400 --> 00:25:16.480
+What we do is we identify what are my top 95th
+
+00:25:16.480 --> 00:25:17.320
+percentile cells.
+
+00:25:18.690 --> 00:25:22.450
+And what are the parameters how how they're behaving uh
+
+00:25:22.450 --> 00:25:25.520
+we identify that what is the kpi
+
+00:25:25.520 --> 00:25:28.760
+of those cells and that becomes my benchmark that defines
+
+00:25:28.760 --> 00:25:29.450
+defines the threshold.
+
+00:25:31.000 --> 00:25:34.600
+Above that threshold the cells are positive are
+
+00:25:34.600 --> 00:25:38.480
+contributing positively to this particular objective and
+
+00:25:38.480 --> 00:25:40.520
+and below that they are not.
+
+00:25:42.160 --> 00:25:45.280
+Contributing positively rather contributing negatively to the object
+
+00:25:45.280 --> 00:25:45.600
+objective.
+
+00:25:47.280 --> 00:25:50.600
+Now once these threshold are defined again
+
+00:25:50.600 --> 00:25:53.040
+again, this is very dynamic in nature.
+
+00:25:53.860 --> 00:25:57.520
+These thresholds can change
+
+00:25:57.520 --> 00:26:00.580
+on a very regular basis we can perform this
+
+00:26:00.580 --> 00:26:03.940
+threshold computation on a daily basis and
+
+00:26:03.940 --> 00:26:07.040
+it can happen in minutes so we
+
+00:26:07.040 --> 00:26:10.480
+do not have a standard solution for weeks and months
+
+00:26:10.480 --> 00:26:13.940
+rather it is very real time it is
+
+00:26:13.940 --> 00:26:14.540
+It is very.
+
+00:26:16.040 --> 00:26:16.560
+What do you say?
+
+00:26:19.650 --> 00:26:22.930
+Uh uh you know uh take into account the latest
+
+00:26:22.930 --> 00:26:23.890
+latest happenings in the network.
+
+00:26:25.940 --> 00:26:27.740
+So now threshold computation is done.
+
+00:26:29.360 --> 00:26:32.480
+Uh and umm after the threshold computation
+
+00:26:32.480 --> 00:26:36.240
+is completed uh comes the problem ident
+
+00:26:36.240 --> 00:26:39.480
+identification or problem detection as I said you ident
+
+00:26:39.480 --> 00:26:42.720
+identify the top it's 95 percentile cells and
+
+00:26:42.720 --> 00:26:46.240
+then identify the cells which are not contributing or not match
+
+00:26:49.130 --> 00:26:52.520
+Then once you have identified these cells
+
+00:26:52.520 --> 00:26:55.560
+you know that these are problematic cells and you can
+
+00:26:55.560 --> 00:26:59.120
+only focus on those cells you can you can provide
+
+00:26:59.120 --> 00:27:02.130
+the net the solution to
+
+00:27:02.130 --> 00:27:03.330
+to those cells.
+
+00:27:06.070 --> 00:27:09.190
+Right umm as opposed to uh any other Sol
+
+00:27:09.190 --> 00:27:12.550
+solution where you have to deploy we we generally go with the
+
+00:27:12.550 --> 00:27:15.750
+uh orchestration of the entire network or we
+
+00:27:15.750 --> 00:27:18.350
+we go with a solution deployment on the entire network.
+
+00:27:19.980 --> 00:27:23.460
+Here we are targeting only the problematic sense now
+
+00:27:23.460 --> 00:27:26.520
+not only do we have very tailored
+
+00:27:26.520 --> 00:27:30.240
+precise threshold definition we also have tailored
+
+00:27:30.240 --> 00:27:31.300
+tailored solution orchestration.
+
+00:27:33.880 --> 00:27:37.800
+The for to achieve the mobility object
+
+00:27:37.800 --> 00:27:41.040
+objective the modules on modules that come into use are
+
+00:27:41.040 --> 00:27:41.920
+are an R.
+
+00:27:43.800 --> 00:27:48.160
+PCI and prach now for an urban sparse location
+
+00:27:48.160 --> 00:27:51.840
+the parameters or the settings needed for those partic
+
+00:27:51.840 --> 00:27:52.440
+particular sound modules.
+
+00:27:53.200 --> 00:27:56.800
+Would be may be different from the ones in urban
+
+00:27:56.800 --> 00:27:59.720
+uh, in rural or sparse uh area, right?
+
+00:28:01.280 --> 00:28:04.600
+So even solution orchestration part the Sol
+
+00:28:04.600 --> 00:28:07.640
+module that we deploy have very precise setting
+
+00:28:07.640 --> 00:28:10.800
+settings which are tailored as per that context
+
+00:28:12.590 --> 00:28:15.630
+And all of it is done autonomously so here you can
+
+00:28:15.630 --> 00:28:18.870
+see without manual intervention we have identified the
+
+00:28:18.870 --> 00:28:22.510
+problem we have and
+
+00:28:22.510 --> 00:28:26.110
+and in a very precise manner only the problematic sense and
+
+00:28:26.110 --> 00:28:29.310
+we have found the solution in a very orgas
+
+00:28:29.310 --> 00:28:32.470
+very precise manner for those problem
+
+00:28:32.470 --> 00:28:33.190
+problematic cells.
+
+00:28:34.430 --> 00:28:37.670
+And they're tailored to the needs as per the context
+
+00:28:37.670 --> 00:28:39.070
+of that particular set.
+
+00:28:42.460 --> 00:28:45.500
+So this was the entire workflow
+
+00:28:45.500 --> 00:28:47.980
+of the execution.
+
+00:28:49.480 --> 00:28:50.120
+Of an autopilot.
+
+00:28:51.840 --> 00:28:55.000
+Of the autopilot in order to achieve any of these objectives.
+
+00:28:57.120 --> 00:29:00.280
+We will move on to see how what objectives
+
+00:29:00.280 --> 00:29:03.760
+could we currently have this is the current view
+
+00:29:03.760 --> 00:29:06.960
+of currently available objectives and mod
+
+00:29:06.960 --> 00:29:10.920
+modules obviously it is subject
+
+00:29:10.920 --> 00:29:14.160
+to change a lot of places where the pilot is
+
+00:29:14.160 --> 00:29:14.320
+is ongoing.
+
+00:29:14.970 --> 00:29:18.240
+Upon completion the status will change but as of today
+
+00:29:18.240 --> 00:29:21.440
+these are uh different objectives and modules that we
+
+00:29:21.440 --> 00:29:24.480
+have to offer in case of 4G we have return
+
+00:29:24.480 --> 00:29:27.730
+returnability throughput availability accessibility and mobility
+
+00:29:27.730 --> 00:29:28.250
+mobility objectives.
+
+00:29:29.840 --> 00:29:33.200
+And in case of 5G we have throughput accessibility and mobility
+
+00:29:33.200 --> 00:29:36.280
+now in order to achieve these object and these are categories
+
+00:29:36.280 --> 00:29:39.400
+of the objectives each of these objective categ
+
+00:29:39.400 --> 00:29:43.040
+category will have the corresponding different well defin
+
+00:29:43.040 --> 00:29:46.280
+defined object is what will be a part of this category
+
+00:29:46.280 --> 00:29:49.560
+for example mobility will have these
+
+00:29:49.560 --> 00:29:53.080
+different objectives cells that are
+
+00:29:53.080 --> 00:29:53.160
+are.
+
+00:29:54.500 --> 00:29:57.980
+That have good intra Lt mobility good W
+
+00:29:57.980 --> 00:30:01.480
+WCBMPSHO base mobility irad based
+
+00:30:01.480 --> 00:30:04.760
+mobility and so on so forth now to achieve these
+
+00:30:04.760 --> 00:30:05.500
+these objectives.
+
+00:30:06.300 --> 00:30:09.900
+Uh what are the solutions that will be deployed in order to
+
+00:30:09.900 --> 00:30:12.940
+fix the problematic cells or uh
+
+00:30:12.940 --> 00:30:16.020
+improve the performance in the problematic cells those are the
+
+00:30:16.020 --> 00:30:19.180
+son modules that will be invoked from
+
+00:30:19.180 --> 00:30:23.180
+from the autopilot. If the cell is not.
+
+00:30:24.900 --> 00:30:28.140
+Is not performing to the as per the
+
+00:30:28.140 --> 00:30:31.500
+threshold identified during the course of threshold or if ident
+
+00:30:31.500 --> 00:30:34.900
+identification so these are the modules these are
+
+00:30:34.900 --> 00:30:38.020
+standard modules so whenever autopilot is
+
+00:30:38.020 --> 00:30:41.780
+executed it needs to be ensured that cor
+
+00:30:41.780 --> 00:30:45.340
+corresponding son has the licence for these modules it
+
+00:30:45.340 --> 00:30:48.460
+the underlying son should have these modules if these modules
+
+00:30:48.460 --> 00:30:49.940
+modules are not there then.
+
+00:30:50.820 --> 00:30:52.180
+For any given objective, let's say.
+
+00:30:52.970 --> 00:30:56.130
+Uh for uh mobility if uh AN
+
+00:30:56.130 --> 00:30:59.330
+ANR is not present on the pcip rach is present then
+
+00:30:59.330 --> 00:31:01.090
+then only those modules will be invoked.
+
+00:31:02.620 --> 00:31:05.900
+Right so here you can see a lot of places pilot
+
+00:31:05.900 --> 00:31:09.500
+doesn't still needed uh a lot of places pilot is ongo
+
+00:31:09.500 --> 00:31:12.580
+ongoing and when that pilot is available uh pilot
+
+00:31:12.580 --> 00:31:15.740
+is successfully completed they'll be declared ga where
+
+00:31:15.740 --> 00:31:18.900
+wherever you see a release mentioned that is where
+
+00:31:18.900 --> 00:31:19.100
+where the.
+
+00:31:20.940 --> 00:31:23.980
+Module has already achieved G or general availability
+
+00:31:27.390 --> 00:31:30.550
+OK so these were the details of how autop
+
+00:31:30.550 --> 00:31:33.580
+autopilot works we will quickly
+
+00:31:33.580 --> 00:31:36.830
+and delve into the results
+
+00:31:36.830 --> 00:31:38.470
+results that Autopilot has brought in.
+
+00:31:40.740 --> 00:31:43.780
+These are the results from the pilot that
+
+00:31:43.780 --> 00:31:46.980
+we are doing for T-Mobile and obviously by the
+
+00:31:46.980 --> 00:31:50.060
+way these are customer specific this is this is still under
+
+00:31:50.060 --> 00:31:53.220
+foaa so it
+
+00:31:53.220 --> 00:31:56.260
+cannot be shared with other customers this is for Nokia internal
+
+00:31:56.260 --> 00:31:56.620
+internal use only.
+
+00:31:58.400 --> 00:31:59.560
+This particular slide.
+
+00:32:01.340 --> 00:32:02.580
+Now in order to.
+
+00:32:04.180 --> 00:32:07.660
+Deliberate or in order to identify or rather judge
+
+00:32:07.660 --> 00:32:11.060
+the performance of autopilot itself these are
+
+00:32:11.060 --> 00:32:14.140
+the categories under which we have eval
+
+00:32:14.140 --> 00:32:17.420
+evaluated it for T-Mobile which is automated
+
+00:32:17.420 --> 00:32:20.340
+automated, operational intelligence, improved precision.
+
+00:32:21.900 --> 00:32:25.020
+Reduce time for network in suboptimal state and
+
+00:32:25.020 --> 00:32:27.580
+improved network performance.
+
+00:32:29.680 --> 00:32:32.800
+Automated operational intelligence what it means is
+
+00:32:32.800 --> 00:32:36.120
+how fast can we uh what kind of autom
+
+00:32:36.120 --> 00:32:40.020
+automation or autonomous execution can we bring in using
+
+00:32:40.020 --> 00:32:43.140
+uh autopilot now if the
+
+00:32:43.140 --> 00:32:46.600
+autopilot is not used the phase where
+
+00:32:46.600 --> 00:32:49.840
+we can textilize the whole network would
+
+00:32:49.840 --> 00:32:53.180
+take weeks now we do not have a formal contextualization phase
+
+00:32:55.300 --> 00:32:58.620
+I don't think any operator does that but primarily what it means
+
+00:32:58.620 --> 00:33:01.900
+is the whole data analysis understanding of the network
+
+00:33:01.900 --> 00:33:05.100
+would still be needed so if you are doing it for the first time
+
+00:33:05.100 --> 00:33:05.980
+time, it may take.
+
+00:33:07.660 --> 00:33:10.780
+Days maybe weeks to understand the context of the entire
+
+00:33:10.780 --> 00:33:11.140
+entire network.
+
+00:33:12.740 --> 00:33:16.180
+Now in case of autopilot that can be achieved within 30 minutes
+
+00:33:16.180 --> 00:33:19.660
+so all the labelling static and dynamic is done
+
+00:33:19.660 --> 00:33:22.620
+done and these contexts are created within 30 minutes.
+
+00:33:24.340 --> 00:33:26.180
+And within 30 minutes we are able to.
+
+00:33:28.420 --> 00:33:31.780
+Evaluate the objective also so we can identify which cells are
+
+00:33:34.140 --> 00:33:35.260
+Are contributing positively.
+
+00:33:36.010 --> 00:33:39.290
+To the set objectives and which are not
+
+00:33:39.290 --> 00:33:42.850
+so basically you are able to identify the
+
+00:33:42.850 --> 00:33:45.090
+the problematic sense as well within 30 minutes.
+
+00:33:47.100 --> 00:33:50.340
+Then comes the aspect of improved
+
+00:33:50.340 --> 00:33:50.460
+precision.
+
+00:33:52.020 --> 00:33:55.460
+Uh what we want is that we are able to achieve
+
+00:33:55.460 --> 00:33:58.940
+the same results as that of song
+
+00:33:58.940 --> 00:34:02.740
+by targeting minimal number
+
+00:34:02.740 --> 00:34:06.940
+of cells so that we have more precised solution
+
+00:34:06.940 --> 00:34:10.500
+of more precise operation
+
+00:34:10.500 --> 00:34:13.940
+so here in this graph for example it
+
+00:34:13.940 --> 00:34:16.260
+it's a little small. I'm sorry for that, but I'll try to explain.
+
+00:34:17.100 --> 00:34:19.540
+The first bar that you see is the.
+
+00:34:20.900 --> 00:34:23.980
+Uh subclusters with dynamic threshold so basically
+
+00:34:23.980 --> 00:34:27.180
+these this these are the subclusters that were target
+
+00:34:29.040 --> 00:34:32.100
+Right so for example these were the number of subclust
+
+00:34:32.100 --> 00:34:36.180
+subclusters on which uh the operation ran the 2nd
+
+00:34:36.180 --> 00:34:39.660
+second one you see is the number of parameters per
+
+00:34:39.660 --> 00:34:42.680
+sub clusters were that were actually changed
+
+00:34:42.680 --> 00:34:43.280
+changed using the.
+
+00:34:44.820 --> 00:34:45.380
+Autopilot.
+
+00:34:47.820 --> 00:34:50.860
+Product and as you can see it's
+
+00:34:50.860 --> 00:34:54.700
+very small in number in most of the cases it is not
+
+00:34:54.700 --> 00:34:57.860
+going beyond 10 right and we are able
+
+00:34:57.860 --> 00:34:58.860
+able to achieve the same.
+
+00:35:00.910 --> 00:35:04.180
+Level of improvement uh targeting
+
+00:35:04.180 --> 00:35:05.510
+Targeting minimal number of changes.
+
+00:35:07.270 --> 00:35:10.500
+And the last bar that you see is focus percent
+
+00:35:10.500 --> 00:35:13.860
+percentage of problematic cells as I had mentioned
+
+00:35:13.860 --> 00:35:16.910
+with Sean if you want to for example run
+
+00:35:16.910 --> 00:35:20.220
+coc on uh entire cluster and find all
+
+00:35:20.220 --> 00:35:23.420
+the outages you may have to run that solution
+
+00:35:23.420 --> 00:35:26.860
+on a entire subcluster or entire network
+
+00:35:26.860 --> 00:35:30.270
+and then identify those outages with
+
+00:35:30.270 --> 00:35:33.030
+with Autopilot. You can actually target.
+
+00:35:33.780 --> 00:35:36.860
+A very small percentage of those cells now in this case
+
+00:35:36.860 --> 00:35:40.740
+for example prach had targeted just below
+
+00:35:40.740 --> 00:35:41.300
+below 10%.
+
+00:35:41.850 --> 00:35:45.770
+Almost 9% of the cells uh to uh to bring in
+
+00:35:45.770 --> 00:35:48.930
+the same amount of improvement uh for the object
+
+00:35:48.930 --> 00:35:52.610
+objective that we were uh aiming at and none of these do you see
+
+00:35:52.610 --> 00:35:55.810
+goes beyond 20% apart from an rvln
+
+00:35:55.810 --> 00:35:59.450
+cclv slv but most of the cases what we
+
+00:35:59.450 --> 00:36:02.730
+see is we are able to achieve the
+
+00:36:02.730 --> 00:36:06.410
+same amount of network improvement by targeting very
+
+00:36:06.410 --> 00:36:07.010
+very few cells.
+
+00:36:07.780 --> 00:36:11.900
+And that is the precise precise nature of our solution deployment I'll
+
+00:36:11.900 --> 00:36:15.060
+give you an example of coc itself in one used case where
+
+00:36:15.060 --> 00:36:15.100
+where.
+
+00:36:16.860 --> 00:36:19.940
+Using mentor is on 5000
+
+00:36:19.940 --> 00:36:23.740
+cells were identified were analysed
+
+00:36:23.740 --> 00:36:25.820
+analysed to identify 7 outages.
+
+00:36:26.950 --> 00:36:30.070
+Using autopilot the same number of outages or the same out
+
+00:36:30.070 --> 00:36:33.500
+outages could be identified by analysing just 92 cells
+
+00:36:33.500 --> 00:36:36.620
+so that is the level of precision we are talking about
+
+00:36:36.620 --> 00:36:39.750
+and it's not just about targeting
+
+00:36:39.750 --> 00:36:42.780
+the problematic cells or a fewer number of cells
+
+00:36:42.780 --> 00:36:46.270
+it's also about defining precise
+
+00:36:46.270 --> 00:36:50.100
+parameters for those solutions so
+
+00:36:50.100 --> 00:36:53.030
+So the modules that will be involved will be.
+
+00:36:54.060 --> 00:36:57.220
+With the tailored settings as per the context of that
+
+00:36:57.220 --> 00:37:00.220
+particular set and that is what brings in the high precision.
+
+00:37:03.010 --> 00:37:06.210
+Reduce time for the network in sub optimization state
+
+00:37:06.210 --> 00:37:09.410
+or sub optimal state what it means is that you are
+
+00:37:09.410 --> 00:37:09.930
+are able to.
+
+00:37:12.860 --> 00:37:16.220
+Identify the problems and fix the problems at a much faster
+
+00:37:16.220 --> 00:37:19.260
+rate if we look at mod
+
+00:37:19.260 --> 00:37:22.420
+module execution we were able to
+
+00:37:22.420 --> 00:37:25.820
+achieve module execution 22 times
+
+00:37:25.820 --> 00:37:28.940
+faster more for when we had run multiple
+
+00:37:28.940 --> 00:37:32.860
+modules Mr OC NR and so on so forth almost
+
+00:37:32.860 --> 00:37:34.140
+almost 22% faster.
+
+00:37:35.780 --> 00:37:38.940
+87 time percent faster problem detection
+
+00:37:38.940 --> 00:37:39.980
+and repair.
+
+00:37:40.750 --> 00:37:44.460
+87% and that is because we are not
+
+00:37:44.460 --> 00:37:44.510
+
+
+00:37:46.060 --> 00:37:49.340
+Deploying these modules on the entire network but we
+
+00:37:49.340 --> 00:37:51.660
+we are going with a very precise approach.
+
+00:37:53.340 --> 00:37:56.420
+A very surgical way to approach the problem
+
+00:37:58.180 --> 00:38:02.500
+And last but not least improved performance improved
+
+00:38:02.500 --> 00:38:05.780
+network performance as I said that
+
+00:38:05.780 --> 00:38:05.860
+that.
+
+00:38:07.930 --> 00:38:11.450
+Despite targeting very few cells we are
+
+00:38:11.450 --> 00:38:14.490
+able to achieve total parity and
+
+00:38:14.490 --> 00:38:18.130
+in a lot of cases improvement as well over
+
+00:38:18.130 --> 00:38:21.930
+and above the optimization that we had achieved
+
+00:38:21.930 --> 00:38:25.250
+using the son module the classic
+
+00:38:25.250 --> 00:38:28.650
+method is on itself right in a lot of cases we see a lot of
+
+00:38:28.650 --> 00:38:32.090
+improvement and at least total parity was there
+
+00:38:37.680 --> 00:38:40.700
+Then we talked about improved precision solution orchestration
+
+00:38:40.700 --> 00:38:40.720
+
+
+00:38:43.130 --> 00:38:46.210
+Umm of course we have talked
+
+00:38:46.210 --> 00:38:49.730
+about it earlier also umm the the
+
+00:38:49.730 --> 00:38:52.930
+solution that we are deploying that itself is very precise
+
+00:38:52.930 --> 00:38:53.330
+precise in nature.
+
+00:38:56.710 --> 00:39:00.020
+So this was for TMO the current side
+
+00:39:00.020 --> 00:39:03.470
+talks about uh our results in nea
+
+00:39:08.300 --> 00:39:11.700
+Used case already which is out which is
+
+00:39:11.700 --> 00:39:12.820
+out in the public domain.
+
+00:39:14.580 --> 00:39:17.980
+In case of stc almost a million corrected us
+
+00:39:17.980 --> 00:39:19.660
+users were there and this.
+
+00:39:21.300 --> 00:39:24.740
+Trial was done during the Hajj period where the operators are
+
+00:39:24.740 --> 00:39:27.820
+they freeze their networks they generally do not touch their networ
+
+00:39:27.820 --> 00:39:31.140
+networks they don't make any changes in the networks just to make sure
+
+00:39:31.140 --> 00:39:35.300
+that you know everything goes fine and there are the
+
+00:39:35.300 --> 00:39:39.100
+whole event goes uneven the whole Hajj
+
+00:39:39.100 --> 00:39:40.700
+Hajj period goes on in eventful.
+
+00:39:42.390 --> 00:39:45.550
+There autopilot was deployed we had almost
+
+00:39:45.550 --> 00:39:48.670
+a million connected users 20,000 simultaneously
+
+00:39:48.670 --> 00:39:49.350
+simultaneously connected users.
+
+00:39:51.580 --> 00:39:54.060
+Who were moving from one place to another, so a few.
+
+00:39:55.940 --> 00:39:59.060
+Know about haj you know that the pilgrims move
+
+00:39:59.060 --> 00:39:59.700
+move from one place to another.
+
+00:40:01.580 --> 00:40:02.940
+And they keep on moving.
+
+00:40:05.020 --> 00:40:09.380
+So there is a very high level of mobility what we
+
+00:40:09.380 --> 00:40:13.180
+were able to achieve was 20% higher
+
+00:40:14.110 --> 00:40:17.260
+14% more connected users and
+
+00:40:17.260 --> 00:40:20.470
+10% higher ddl throughput all
+
+00:40:20.470 --> 00:40:23.510
+this by doing almost 10,000
+
+00:40:23.510 --> 00:40:25.310
+000 autonomous optimizations.
+
+00:40:26.980 --> 00:40:31.020
+Per hour in a network where generally no
+
+00:40:31.020 --> 00:40:34.540
+changes are allowed during the time of Hajj so
+
+00:40:34.540 --> 00:40:37.740
+that is the level of improvement that
+
+00:40:43.280 --> 00:40:47.360
+Now here we will look at the various deployment models off
+
+00:40:47.360 --> 00:40:50.660
+song so autopilot is a soft
+
+00:40:50.660 --> 00:40:53.320
+software only delivery which can be deployed.
+
+00:40:54.900 --> 00:40:54.980
+On.
+
+00:40:58.880 --> 00:41:00.040
+Just one second please.
+
+00:41:06.960 --> 00:41:09.980
+Yeah so which can be deployed on the NMCC
+
+00:41:09.980 --> 00:41:13.040
+NMCCP blueprint solution umm it can be deployed on
+
+00:41:13.040 --> 00:41:16.300
+top of the umm so the the
+
+00:41:16.300 --> 00:41:20.200
+blueprint solution from nccp it can be deployed on top of HP
+
+00:41:20.200 --> 00:41:23.900
+DL360 Gen 11 hardware with
+
+00:41:23.900 --> 00:41:24.720
+hardware with Electra storage.
+
+00:41:26.260 --> 00:41:29.060
+From product line, this is the offering that we have.
+
+00:41:33.300 --> 00:41:36.460
+And then there are various other deployment models where
+
+00:41:36.460 --> 00:41:36.660
+we.
+
+00:41:38.340 --> 00:41:41.020
+Have to bring in the services engagement now from.
+
+00:41:43.220 --> 00:41:46.340
+The blueprint solution the initial configuration that we started with
+
+00:41:46.340 --> 00:41:50.500
+was one provisional node 3
+
+00:41:50.500 --> 00:41:54.020
+computational node and six control nodes that is some around
+
+00:41:54.020 --> 00:41:57.220
+10 servers but we were able to optimise it and
+
+00:41:59.260 --> 00:42:02.420
+What we need is 7 servers one for provision 1
+
+00:42:02.420 --> 00:42:05.020
+1 computational and one control node.
+
+00:42:06.130 --> 00:42:09.410
+We are working on uh reducing it
+
+00:42:09.410 --> 00:42:14.130
+further so that uh we are able to achieve umm for
+
+00:42:14.130 --> 00:42:18.370
+pocs for example uh we can uh for uh a target
+
+00:42:18.370 --> 00:42:22.530
+of 160 K cells uh we can use uh the
+
+00:42:22.530 --> 00:42:26.330
+deployment on uh A4 server configuration where
+
+00:42:26.330 --> 00:42:29.490
+one for will be for provision node and three for comput
+
+00:42:29.490 --> 00:42:30.250
+computational and control.
+
+00:42:31.860 --> 00:42:34.940
+Then there are various deployment models where serv
+
+00:42:34.940 --> 00:42:37.980
+services engagements can be brought into play
+
+00:42:39.630 --> 00:42:43.540
+Umm one is the bare metal approach itself which uh where
+
+00:42:43.540 --> 00:42:46.820
+the current minimum configuration uh that services team
+
+00:42:46.820 --> 00:42:49.950
+has tried upon is for 50 cases can be used for poc
+
+00:42:49.950 --> 00:42:50.350
+Pocs and.
+
+00:42:51.980 --> 00:42:56.020
+Uh and pilots up and so on where just
+
+00:42:56.020 --> 00:42:59.220
+4 servers are needed then we have these other
+
+00:42:59.220 --> 00:43:02.780
+deployment models this for bare metal then we have that other deploy
+
+00:43:02.780 --> 00:43:05.940
+deployment models where even the hardware is provided by the customer
+
+00:43:05.940 --> 00:43:10.020
+and Nokia provides only the ohc
+
+00:43:10.020 --> 00:43:13.340
+ohcp ocp and the platform components from
+
+00:43:13.340 --> 00:43:14.340
+components from NMCCP.
+
+00:43:16.210 --> 00:43:19.570
+Umm yet another umm approach is where
+
+00:43:19.570 --> 00:43:22.650
+uh the ocp comes from
+
+00:43:22.650 --> 00:43:25.730
+the customer the hardware and ocp both come from
+
+00:43:29.100 --> 00:43:32.380
+All these three deployment modules require serv
+
+00:43:32.380 --> 00:43:32.700
+services engagement.
+
+00:43:40.580 --> 00:43:40.820
+OK.
+
+00:43:42.820 --> 00:43:45.860
+So this was all about what autopilot is doing as
+
+00:43:45.860 --> 00:43:48.620
+of now, what was the deployment model and so on so forth.
+
+00:43:51.860 --> 00:43:55.220
+Here in this slide what I talked about is the
+
+00:43:55.220 --> 00:43:57.260
+future, the vision that Autopilot has.
+
+00:43:58.940 --> 00:44:02.140
+As of now it's what is already available is
+
+00:44:02.140 --> 00:44:05.180
+network contextualization and algor
+
+00:44:05.180 --> 00:44:05.900
+algorithm orchestration.
+
+00:44:07.860 --> 00:44:10.900
+The next step would be to bring in custom objectives
+
+00:44:10.900 --> 00:44:14.220
+and module registration and what does that mean as of now
+
+00:44:14.220 --> 00:44:17.380
+we have some preshhed objectives
+
+00:44:17.380 --> 00:44:20.580
+and the son modules which are mapped to these objectives
+
+00:44:20.580 --> 00:44:20.620
+objectives.
+
+00:44:22.770 --> 00:44:25.930
+Our customers already have hundreds of adapted modules
+
+00:44:25.930 --> 00:44:28.650
+of their own that they use to orchestrate their network.
+
+00:44:30.220 --> 00:44:30.660
+Now.
+
+00:44:32.420 --> 00:44:36.100
+They should be able to define their own objectives and they
+
+00:44:36.100 --> 00:44:39.340
+should be able to register their own modules to
+
+00:44:39.340 --> 00:44:43.460
+these objectives in order to deploy their solution
+
+00:44:43.460 --> 00:44:43.500
+
+
+00:44:45.300 --> 00:44:48.380
+That is the next level of flex
+
+00:44:48.380 --> 00:44:52.180
+flexibility that we want to bring in with autopilot so along with the object
+
+00:44:52.180 --> 00:44:52.860
+objectives that we are shipping.
+
+00:44:54.080 --> 00:44:57.360
+It is possible to define custom objectives and
+
+00:44:57.360 --> 00:45:00.460
+register the custom uh
+
+00:45:00.460 --> 00:45:03.700
+modules or the adapter modules by the users uh
+
+00:45:03.700 --> 00:45:06.840
+to these objectives that is the next level that we
+
+00:45:08.860 --> 00:45:12.220
+Then comes the extreme intent based on what it
+
+00:45:12.220 --> 00:45:15.700
+means is as of now we have objective we have int
+
+00:45:15.700 --> 00:45:19.260
+intents intent based solution but then still
+
+00:45:19.260 --> 00:45:20.300
+still this rule driven.
+
+00:45:22.440 --> 00:45:25.800
+With extreme intent based on umm what
+
+00:45:25.800 --> 00:45:28.820
+we want to achieve is that we
+
+00:45:28.820 --> 00:45:32.680
+want the customer to only give the intent and
+
+00:45:32.680 --> 00:45:35.700
+we derive the rule using that intent the autopil
+
+00:45:35.700 --> 00:45:38.280
+autopilot drives that rule using that intent.
+
+00:45:39.820 --> 00:45:43.220
+And ultimately what we want to achieve
+
+00:45:43.220 --> 00:45:46.500
+is predictive problem solving so as of now autopilot is
+
+00:45:46.500 --> 00:45:49.660
+reactive in nature it acts upon the KP
+
+00:45:49.660 --> 00:45:51.580
+KPIs, network performance and so on so forth.
+
+00:45:53.260 --> 00:45:56.660
+What we want to achieve is that autopilot is able to predict
+
+00:45:56.660 --> 00:45:59.260
+the problems and then provide solutions.
+
+00:46:00.860 --> 00:46:02.820
+In order to address those problems proactively.
+
+00:46:04.570 --> 00:46:07.330
+That is the ultimate aim that we have for Autopilot.
+
+00:46:09.600 --> 00:46:13.300
+So this I come to the end of the presentation for
+
+00:46:13.300 --> 00:46:16.000
+more information. We have links here and.
+
+00:46:17.660 --> 00:46:20.980
+The list of contacts are also there from portfolio
+
+00:46:20.980 --> 00:46:21.300
+management.
+
+00:46:23.180 --> 00:46:26.420
+You can contact toya from product management you can
+
+00:46:26.420 --> 00:46:29.820
+contact me and for any
+
+00:46:29.820 --> 00:46:33.140
+architectural topics Mohan can
+
+00:46:33.140 --> 00:46:36.260
+be contacted or else for all the topics you
+
+00:46:36.260 --> 00:46:37.300
+You can contact me and then I can.
+
+00:46:39.020 --> 00:46:40.180
+Direct it towards.
+
+00:46:42.880 --> 00:46:45.400
+Towards the relevant stakeholders and get your answers.
+
+00:46:50.930 --> 00:46:53.770
+Thank you, vikas. Maybe we shall take.
+
+00:46:55.740 --> 00:46:59.180
+Some questions that has been coming several quest
+
+00:46:59.180 --> 00:47:00.660
+questions related to the.
+
+00:47:07.260 --> 00:47:10.780
+Day that not only for the 15
+
+00:47:10.780 --> 00:47:14.660
+minute intervals but also for
+
+00:47:14.660 --> 00:47:17.740
+the trace based data do
+
+00:47:24.440 --> 00:47:25.520
+OK, I'm not.
+
+00:47:26.640 --> 00:47:30.440
+Having access to umm the
+
+00:47:30.440 --> 00:47:33.460
+if you can give me just one minute I'll just
+
+00:47:33.460 --> 00:47:34.560
+just go on to the.
+
+00:47:38.620 --> 00:47:39.420
+The questions.
+
+00:47:44.350 --> 00:47:47.470
+The question is many customers have asked
+
+00:47:47.470 --> 00:47:49.350
+asked real time Autopilot.
+
+00:47:50.900 --> 00:47:54.500
+And the one second reaction time instead of 50
+
+00:47:54.500 --> 00:47:56.580
+minutes, is there any plans for this?
+
+00:47:58.460 --> 00:48:01.660
+OK I think one second as of now no
+
+00:48:03.340 --> 00:48:06.980
+What we have so for example sdc itself we
+
+00:48:06.980 --> 00:48:10.300
+were able to initially the reaction time
+
+00:48:10.300 --> 00:48:13.500
+we were analysing some 8 hours data and
+
+00:48:13.500 --> 00:48:13.580
+and all that.
+
+00:48:14.670 --> 00:48:17.940
+Uh we brought it down to 15 minutes uh as
+
+00:48:17.940 --> 00:48:21.070
+of now umm we do not really
+
+00:48:21.070 --> 00:48:25.100
+have that plan to reduce it further umm but then
+
+00:48:25.100 --> 00:48:28.260
+yes in future probably we'll come down to 5
+
+00:48:30.420 --> 00:48:33.860
+But as of now it is there are other activities which are on the cards
+
+00:48:33.860 --> 00:48:33.900
+cards.
+
+00:48:35.500 --> 00:48:38.540
+OK then the next next next
+
+00:48:38.540 --> 00:48:42.140
+question is that is autopilot deploy
+
+00:48:42.140 --> 00:48:42.940
+deployed commercially?
+
+00:48:43.550 --> 00:48:46.580
+Anywhere globally or is it still
+
+00:48:46.580 --> 00:48:50.100
+in trial or proof of concept phase
+
+00:48:50.100 --> 00:48:50.110
+phase?
+
+00:48:51.660 --> 00:48:54.660
+We do not have a commercial deployment as such, but.
+
+00:49:01.180 --> 00:49:04.340
+With TMO we are we have done a
+
+00:49:04.340 --> 00:49:07.860
+very extensive pilot and hope
+
+00:49:07.860 --> 00:49:11.380
+hopefully by end of 2025 or maybe first
+
+00:49:11.380 --> 00:49:14.580
+half of 2026 we should be able to deploy
+
+00:49:14.580 --> 00:49:14.980
+it commercially.
+
+00:49:16.560 --> 00:49:19.200
+OK. Thank you then.
+
+00:49:21.060 --> 00:49:24.820
+Next questions now we are going a bit different area
+
+00:49:24.820 --> 00:49:28.340
+the question is many optim
+
+00:49:28.340 --> 00:49:31.540
+optimization activities gain better results when
+
+00:49:31.540 --> 00:49:34.740
+applied to bigger area than just
+
+00:49:34.740 --> 00:49:38.580
+the poorly performing sales how
+
+00:49:38.580 --> 00:49:42.020
+does outer payler autopilot takes this into
+
+00:49:42.020 --> 00:49:42.300
+into account?
+
+00:49:44.760 --> 00:49:48.900
+Could you repeat that question I'm sorry uh yes yes yes many
+
+00:49:48.900 --> 00:49:52.780
+optimization activities gain better results
+
+00:49:52.780 --> 00:49:56.100
+than applied to bigger area than us
+
+00:49:56.100 --> 00:49:56.120
+than us.
+
+00:49:57.660 --> 00:50:00.980
+Poorly performing sales how does aut
+
+00:50:00.980 --> 00:50:02.740
+Autopilot takes this into account?
+
+00:50:04.660 --> 00:50:05.260
+OK so.
+
+00:50:07.260 --> 00:50:07.860
+As I said that.
+
+00:50:10.940 --> 00:50:14.140
+What we are trying to achieve is more pre
+
+00:50:14.140 --> 00:50:14.820
+precision with autopilot.
+
+00:50:17.810 --> 00:50:20.890
+If we are analysing these subclusters and
+
+00:50:20.890 --> 00:50:22.090
+these subclusters are.
+
+00:50:23.660 --> 00:50:27.020
+Created based on the existing characterist
+
+00:50:27.020 --> 00:50:27.580
+characteristics of the soils.
+
+00:50:29.580 --> 00:50:33.460
+Cells of similar characteristics are grouped together and
+
+00:50:33.460 --> 00:50:37.020
+the threshold to identify whether
+
+00:50:37.020 --> 00:50:39.660
+a cell is performing poorly or not.
+
+00:50:41.220 --> 00:50:41.300
+Is.
+
+00:50:42.930 --> 00:50:46.610
+Calculated or computed for that particular subcluster if there are
+
+00:50:46.610 --> 00:50:49.770
+more number of cells which are problematic then obvious
+
+00:50:49.770 --> 00:50:53.290
+obviously the number of cells which are uh which we are
+
+00:50:53.290 --> 00:50:56.530
+targeting will be higher and
+
+00:50:56.530 --> 00:50:59.890
+of course there are set parameters that
+
+00:50:59.890 --> 00:51:03.130
+can be defined in order to decide what
+
+00:51:03.130 --> 00:51:06.330
+all parameters should be targeted for solution
+
+00:51:09.260 --> 00:51:12.380
+So that is also something which is a flexibility that is already available
+
+00:51:12.380 --> 00:51:12.460
+
+
+00:51:13.310 --> 00:51:16.620
+Uh maybe umm Mohan can give more
+
+00:51:16.620 --> 00:51:20.150
+information on this uh Mohan maybe umm if
+
+00:51:20.150 --> 00:51:21.270
+umm, if you can take that question for me.
+
+00:51:23.390 --> 00:51:26.740
+Sure because I yeah I am at least I was typing
+
+00:51:26.740 --> 00:51:29.900
+this but it's a very very valid question so
+
+00:51:29.900 --> 00:51:33.230
+when we have this kind of solution orch
+
+00:51:33.230 --> 00:51:36.390
+orchestration it is just not the problem at excel but
+
+00:51:36.390 --> 00:51:39.500
+we also want to have additional cells
+
+00:51:39.500 --> 00:51:42.990
+which are needed to be orchestrated so that it can
+
+00:51:42.990 --> 00:51:46.390
+provide the much more optimal value so that is the reason autop
+
+00:51:46.390 --> 00:51:49.630
+autopilot brings in a capability called a supplementary
+
+00:51:50.420 --> 00:51:53.980
+So it's just not based on the solution we are orchestrating along
+
+00:51:53.980 --> 00:51:57.380
+with the problem at excel it will also try to include the supp
+
+00:51:57.380 --> 00:52:00.860
+supplementary cells as well so for in classic
+
+00:52:00.860 --> 00:52:04.100
+example it can be the reuse modules so the
+
+00:52:04.100 --> 00:52:06.460
+the reuse modules when we are doing this.
+
+00:52:07.990 --> 00:52:11.190
+It is just not the problematic self by just changing the
+
+00:52:11.190 --> 00:52:14.310
+RSA or apci value for a a supplement
+
+00:52:14.310 --> 00:52:17.580
+supplementary cell can also resolve the problem at excel's problem so
+
+00:52:17.580 --> 00:52:20.940
+that's the focus area and it can be
+
+00:52:20.940 --> 00:52:24.500
+compensate even it can be taken for sell out
+
+00:52:24.500 --> 00:52:27.910
+outage compensation so even though you have an outage cell actual
+
+00:52:27.910 --> 00:52:31.220
+compensation cell is also needed for it
+
+00:52:31.220 --> 00:52:34.340
+to be offloading those traffic as well for the out
+
+00:52:34.340 --> 00:52:34.870
+out itself so.
+
+00:52:35.660 --> 00:52:39.100
+Autopilot is taking care of these based on the solutions which
+
+00:52:39.100 --> 00:52:39.940
+it is orchestrating.
+
+00:52:41.170 --> 00:52:44.490
+Yeah and especially for reuse uh modules
+
+00:52:44.490 --> 00:52:45.970
+modules that we have such as PC and P.
+
+00:52:48.820 --> 00:52:52.060
+It is just not possible to target only the problematic cells if you're
+
+00:52:52.060 --> 00:52:54.620
+re changing the swapping the pcis or changing the pcis.
+
+00:52:56.420 --> 00:52:59.460
+The conflicts also have to be resolved so all those changes are
+
+00:52:59.460 --> 00:53:00.740
+are handled by Autopilot.
+
+00:53:04.350 --> 00:53:07.830
+Then I think that this this is our last quest
+
+00:53:07.830 --> 00:53:11.110
+question now is the question is
+
+00:53:11.110 --> 00:53:14.180
+when AI uses will be
+
+00:53:14.180 --> 00:53:17.190
+extended to help our customers to
+
+00:53:17.190 --> 00:53:20.340
+identify the optimal parameter setting
+
+00:53:20.340 --> 00:53:21.950
+settings at cell level.
+
+00:53:23.580 --> 00:53:26.980
+For different run features that goes beyond PCI
+
+00:53:26.980 --> 00:53:30.060
+per us and an R
+
+00:53:30.060 --> 00:53:33.740
+is there this kind of planning
+
+00:53:33.740 --> 00:53:33.780
+
+
+00:53:34.890 --> 00:53:35.770
+Currently.
+
+00:53:37.300 --> 00:53:38.940
+Are we? Is there any plans for that?
+
+00:53:42.370 --> 00:53:43.570
+OK so.
+
+00:53:45.270 --> 00:53:48.500
+Maybe I need some follow up information on that
+
+00:53:48.500 --> 00:53:51.750
+uh front what do we mean by that umm
+
+00:53:51.750 --> 00:53:52.350
+Umm, by.
+
+00:53:53.860 --> 00:53:56.900
+By when we say that OK we are targeting
+
+00:53:56.900 --> 00:54:00.420
+specific cells or at bring
+
+00:54:00.420 --> 00:54:04.020
+bringing in AI at cell level so OK there is a concept
+
+00:54:04.020 --> 00:54:05.900
+concept for AI for ran.
+
+00:54:07.860 --> 00:54:08.420
+And AI.
+
+00:54:10.780 --> 00:54:13.900
+Or ran AI itself right so if
+
+00:54:13.900 --> 00:54:17.020
+the domain in which autopilot
+
+00:54:17.020 --> 00:54:20.220
+works on is AI for run in which
+
+00:54:20.220 --> 00:54:23.420
+it has it acts upon externally it does
+
+00:54:23.420 --> 00:54:26.540
+not bring in the AI logic or deploys
+
+00:54:26.540 --> 00:54:30.060
+AI logic at ram level rather it's a
+
+00:54:30.060 --> 00:54:33.900
+it's a tool that sits outside and analyses the ran and
+
+00:54:33.900 --> 00:54:37.500
+then invokes needed functionality or needed changes in the in the
+
+00:54:37.500 --> 00:54:37.900
+in the.
+
+00:54:38.900 --> 00:54:40.140
+Ran using the.
+
+00:54:42.460 --> 00:54:45.580
+The machine learning data that it has gathered and analysed
+
+00:54:49.320 --> 00:54:52.900
+So if I'm not understanding this question correctly
+
+00:54:52.900 --> 00:54:56.000
+maybe you can share some more information
+
+00:54:56.000 --> 00:54:57.400
+information on that and we can have a follow up.
+
+00:54:58.820 --> 00:55:02.180
+Mohan if you have something to add on on this particular question
+
+00:55:02.180 --> 00:55:03.820
+question, I'm not sure if I understood it correctly.
+
+00:55:05.790 --> 00:55:08.990
+Yeah unless I answered this so I think
+
+00:55:08.990 --> 00:55:12.180
+if this question is more towards
+
+00:55:12.180 --> 00:55:15.740
+bringing in the multi vendor capability
+
+00:55:15.740 --> 00:55:18.860
+so the solution orchestration is already the
+
+00:55:18.860 --> 00:55:22.460
+sound solutions are already multi vendor so the same
+
+00:55:22.460 --> 00:55:25.660
+support is extended for autopil
+
+00:55:25.660 --> 00:55:29.180
+autopilot as well so if that is not the
+
+00:55:29.180 --> 00:55:32.550
+underlying question maybe we can take this offline as well with
+
+00:55:32.550 --> 00:55:33.030
+well with Samuel.
+
+00:55:34.580 --> 00:55:34.900
+OK.
+
+00:55:36.500 --> 00:55:39.420
+Then just one one thing I would like to highlight.
+
+00:55:41.460 --> 00:55:44.660
+AI autopilot is an independent product but it does
+
+00:55:44.660 --> 00:55:47.740
+use the underlying class
+
+00:55:47.740 --> 00:55:50.980
+classic son to deploy these solutions so all the
+
+00:55:50.980 --> 00:55:54.180
+capabilities that are available and so on are available
+
+00:55:54.180 --> 00:55:58.340
+in autopilot because ultimately it is working on top
+
+00:55:58.340 --> 00:56:02.500
+of our mentor is on so function
+
+00:56:02.500 --> 00:56:06.340
+flexibilities or functionality such as mvie and all
+
+00:56:17.050 --> 00:56:21.130
+Yes and then one one question about
+
+00:56:21.130 --> 00:56:24.730
+some Samsung so called support is the autopilot
+
+00:56:24.730 --> 00:56:25.810
+autopilot supporting Samsung.
+
+00:56:27.340 --> 00:56:27.660
+That works.
+
+00:56:29.780 --> 00:56:32.980
+As of now son itself does not
+
+00:56:32.980 --> 00:56:33.940
+not support Samsung.
+
+00:56:36.420 --> 00:56:39.700
+And there are two reasons for that one is that
+
+00:56:39.700 --> 00:56:43.100
+Samsung itself is not a part of versus II
+
+00:56:43.100 --> 00:56:46.460
+So what it needs is that we have
+
+00:56:48.420 --> 00:56:51.700
+Take help from customer to get the needed inter
+
+00:56:51.700 --> 00:56:53.700
+interface. Pick under NDA and.
+
+00:56:55.460 --> 00:56:58.700
+Many a times the solution from Samsung
+
+00:56:58.700 --> 00:57:00.980
+may be customised from 1 customer to another.
+
+00:57:02.900 --> 00:57:06.300
+We do not have an umbrella interface spec
+
+00:57:06.300 --> 00:57:09.540
+we may not have an umbrella interface spec so that is one reason
+
+00:57:09.540 --> 00:57:12.620
+why as of now Samsung is not
+
+00:57:12.620 --> 00:57:15.860
+handled by son another
+
+00:57:15.860 --> 00:57:16.540
+Another reason is that.
+
+00:57:18.820 --> 00:57:22.340
+There has to be a good business use case so
+
+00:57:22.340 --> 00:57:26.180
+far whatever queries we have got we have not received
+
+00:57:26.180 --> 00:57:29.380
+a used case where song has to be included so in a nutshe
+
+00:57:29.380 --> 00:57:30.340
+nutshell, as of now there is no plan.
+
+00:57:32.100 --> 00:57:35.220
+To provide this functionality for Samsung
+
+00:57:35.220 --> 00:57:35.300
+
+
+00:57:36.730 --> 00:57:37.690
+Have support for Samsung?
+
+00:57:39.620 --> 00:57:42.900
+Thank you vikas thank thank you all
+
+00:57:42.900 --> 00:57:46.500
+the listeners I think that we are ending this session and also
+
+00:57:46.500 --> 00:57:50.060
+thank thanks for the raya Mohan
+
+00:57:50.060 --> 00:57:53.220
+and vikas about presentation and
+
+00:57:53.220 --> 00:57:55.460
+and active answering to the questions.
+
+00:58:01.050 --> 00:58:03.730
+Thank you. Final word, final words because.
+
+00:58:07.020 --> 00:58:10.620
+Yeah so thank you for joining this
+
+00:58:10.620 --> 00:58:13.940
+session I hope it it gave you some information
+
+00:58:13.940 --> 00:58:17.220
+on what autopilot is what it is doing and how it is doing
+
+00:58:19.220 --> 00:58:22.700
+Yeah we we have some
+
+00:58:22.700 --> 00:58:25.740
+functionalities and capabilities already available and
+
+00:58:25.740 --> 00:58:29.060
+quite a lot of them are under development so yeah
+
+00:58:29.060 --> 00:58:32.140
+let's let's let's
+
+00:58:32.140 --> 00:58:33.180
+let's push it forward. Thank you.
+
+00:58:39.980 --> 00:58:43.020
+All right thank you so much everyone for joining in
+
+00:58:43.020 --> 00:58:46.260
+we can go ahead and close this call please do not forget to claim your
+
+00:58:46.260 --> 00:58:49.540
+credits for the session and once you've done that you are free
+
+00:58:49.540 --> 00:58:52.700
+to go thank you so much everyone for joining in and have a great
+
+00:58:52.700 --> 00:58:54.420
+great day. Thank you and bye bye. See you.
+
+00:59:05.740 --> 00:59:14.740
+
+
